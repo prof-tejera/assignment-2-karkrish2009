@@ -1,15 +1,11 @@
 import './App.css';
 import React from 'react';
-import {useState, useEffect, useRef} from 'react';
-import TimerList from './components/TimerList';
+//import {useState, useEffect, useRef} from 'react';
+//import TimerList from './components/TimerList';
 import Wrapped from './components/TimerList';
 
 const App = () => {
-  let xtime = 2;
-  let ytime = 4;
-  let rounds = 1;
-  let countdown = true;
-  const numbers = [1, 2, 3, 4, 5];
+  
   //const xytimerList = numbers.map((number) =>
   //  <XYTimer xtime={xtime} ytime={ytime} countdown={countdown} rounds = {rounds} key={number.toString()} value={number}/>
   return (
