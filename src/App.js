@@ -1,8 +1,8 @@
 import './App.css';
 import React from 'react';
 import {useState, useEffect, useRef} from 'react';
-import TimerList from './Components/TimerList';
-import Wrapped from './Components/TimerList';
+import TimerList from './components/TimerList';
+import Wrapped from './components/TimerList';
 
 const App = () => {
   let xtime = 2;
