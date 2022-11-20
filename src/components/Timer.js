@@ -52,7 +52,7 @@ const Timer = ({id, xtime, ytime, countdown}) => {
         setPhase("Countdown Clock");
       }
       else {
-        setPhase("XY Clock: X Phase");
+        setPhase("XY Clock");
       }
     }
     else {
@@ -97,7 +97,7 @@ const Timer = ({id, xtime, ytime, countdown}) => {
               else {
                 if (yExists && countdown.current) {
                   current_phase.current = false;
-                  setPhase("Y Phase");
+                  setPhase("XY Clock: Y Phase");
                 }
                 else {
                   return clearInterval(interval);
@@ -114,6 +114,7 @@ const Timer = ({id, xtime, ytime, countdown}) => {
             }
             else {
               current_phase.current = true;
+              //setPhase("X and Y Phases Completed");
               return clearInterval(interval);
             }
           }
@@ -138,6 +139,7 @@ const Timer = ({id, xtime, ytime, countdown}) => {
       </div>
       <div>
         <span>Clock Number {id}: {phase}</span>
+        {phase === "StopWatch" && <span> with upper time limit of {xtime} minutes</span>}
       </div>
       <div>
         <DisplayClock time={xTime}/>
