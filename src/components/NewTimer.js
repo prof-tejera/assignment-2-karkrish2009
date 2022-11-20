@@ -1,6 +1,6 @@
-import { useContext, useEffect, useState, useRef } from 'react';
-import TimerProvider, {TimerContext} from './TimerProvider';
-import Button from './Button';
+import { useContext, useState } from 'react';
+import {TimerContext} from './TimerProvider';
+//import Button from './Button';
 
 const NewTimer = () => {
   const { createTimer } = useContext(TimerContext);

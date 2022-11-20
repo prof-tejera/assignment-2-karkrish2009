@@ -1,5 +1,5 @@
-import { useContext, useEffect, useState, useRef } from 'react';
-import { TimerContext } from './TimerProvider';
+import { useEffect, useState, useRef } from 'react';
+//import { TimerContext } from './TimerProvider';
 import Button from './Button';
 import DisplayClock from './DisplayClock';
 
@@ -42,7 +42,7 @@ const Timer = ({id, xtime, ytime, countdown}) => {
 
   useEffect(() => {
     let interval = null;
-    let interval1 = null;
+
     let runx = xTime;
     let runy = yTime;
     let round_number = 1;
@@ -126,7 +126,7 @@ const Timer = ({id, xtime, ytime, countdown}) => {
         return clearInterval(interval);
       }
       return () => clearInterval(interval);
-    }, [timerOn])
+    }, [timerOn, countdown, phase, xTime, xtime, yExists, yTime])
 
 
   return (

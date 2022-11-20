@@ -5,7 +5,7 @@ import NewTimer from './NewTimer';
 
 
 const TimerList = () => {
-  const { selectedTimerId, setSelectedTimerId, timers } = useContext(TimerContext);
+  //const { selectedTimerId, setSelectedTimerId, timers } = useContext(TimerContext);
   console.log(timers.map(timer => console.log(timer)));
 
   //if (selectedTimerId) return <Timer timerId={selectedTimerId} />
